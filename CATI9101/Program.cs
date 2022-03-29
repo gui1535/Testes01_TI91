@@ -64,7 +64,7 @@ for (int i = 0; i < m.Length; i++)
            
             // Formas de conversões de tipos
 
-            Console.ReadKey(); // Ler tecla
+           
              */
 
             Console.WriteLine("Digite seu nome");
