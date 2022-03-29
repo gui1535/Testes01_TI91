@@ -7,7 +7,7 @@ namespace CATI9101
         // Atributos
 
         // Construtores - Criam e inicializam instancias
-
+        
         // Metodos de acesso (get e set) - C# -> Propriedades
 
         // Metodos da classe - função, operação, ação do objeto
@@ -67,21 +67,16 @@ for (int i = 0; i < m.Length; i++)
             Console.ReadKey(); // Ler tecla
              */
 
-            Console.WriteLine('Digite seu nome');
+            Console.WriteLine("Digite seu nome");
             string nome =Console.ReadLine();
             Console.WriteLine("Digite o ano de seu nascimento: ");
             // int ano = (int)Console.ReadLine(); // cast
             // int ano = int.Parse(Console.ReadLine()); // parse
             short ano = Convert.ToInt16(Console.ReadLine()); // classe convert
-            byte idade = DateTime.Now.Year - Convert.ToSByte(ano);
-
+            byte idade = (byte)(DateTime.Now.Year - (byte)ano);
+            Console.WriteLine("Ola {0}, sua idade é {1} anos", nome, idade);
+            Console.ReadKey();
         }
-        /*public static int Exibir(int x) {
-
-            x = x*9;
-            return x;
-        }
-        */
     }
 }
 
