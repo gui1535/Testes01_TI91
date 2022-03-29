@@ -72,8 +72,8 @@ for (int i = 0; i < m.Length; i++)
             Console.WriteLine("Digite o ano de seu nascimento: ");
             // int ano = (int)Console.ReadLine(); // cast
             // int ano = int.Parse(Console.ReadLine()); // parse
-            short ano = Convert.ToInt16(Console.ReadLine()); // classe convert
-            byte idade = (byte)(DateTime.Now.Year - (byte)ano);
+            string ano = Console.ReadLine(); // classe convert
+            int idade = DateTime.Now.Year - int.Parse(ano);
             Console.WriteLine("Ola {0}, sua idade é {1} anos", nome, idade);
             Console.ReadKey();
         }
