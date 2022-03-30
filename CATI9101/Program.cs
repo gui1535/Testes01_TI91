@@ -20,7 +20,6 @@ namespace CATI9101
             // int[,] pontos = { { 0, 2 }, { 1, 3 }, { 2, 5 }, { 3, 4 } };
             string[] times = new string[5];
             int[,] tabela = new int[5, 6];
-
             /*
             int[,] m = new int[4, 2];
             m[0, 0] = 0;
@@ -32,6 +31,11 @@ namespace CATI9101
             foreach (string jogador in jogadores)
             {
                 Console.WriteLine(jogador);
+            }
+            for (int i = 0; i < jogadores.Length; i++)
+            {
+                Console.WriteLine($"Digite o nome do {i+1}° primeiro jogador");
+                jogadores[i] = Console.ReadLine();
             }
         }
 
