@@ -14,7 +14,8 @@ namespace CATI9101
 
         static void Main(string[] args) // void nao retorna
         {
-            /* // Declarar variavel
+            /*
+            // Declarar variavel
              var x = 10;
              var nome = "Gui";
              var teste = true;
@@ -22,7 +23,7 @@ namespace CATI9101
              var num = 15f;
              var y = false;
 
- /*
+ 
              byte[] vetor = new byte[3]; // Matriz de bytes / byte vai de 0~255
              vetor[0] = 71;
              vetor[1] = 117;
@@ -32,10 +33,10 @@ namespace CATI9101
              {
                  Console.WriteLine(vetor[i]);
              }
- */
+
             // --------------------------------------------------------------------------------------//
             // Variaveis
-            /*
+           
             byte l = 255; // 0~255
             short s = 32767; // 16bits
             ushort ss = 65535; // Valores positivos até 16bits
@@ -65,7 +66,7 @@ for (int i = 0; i < m.Length; i++)
             // Formas de conversões de tipos
 
            
-             */
+        */
 
             Console.WriteLine("Digite seu nome");
             string nome =Console.ReadLine();
@@ -79,11 +80,10 @@ for (int i = 0; i < m.Length; i++)
         }
     }
 }
-
 /*
           Console.WriteLine("Digite seu nome: ");
               string nome = Console.ReadLine();
           Console.WriteLine("Bom dia " + nome);
           Console.ReadKey();
 // Copilot
-          */
+*/
