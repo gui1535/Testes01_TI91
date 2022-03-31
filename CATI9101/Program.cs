@@ -88,7 +88,7 @@ namespace CATI9101
         // Manipulação de Strings
         static void ManiString()
         {
-            string nome = "Guilherme Araujo";
+            //string nome = "Guilherme Araujo";
 
             // Retornar numeros de caracteres
             //Console.WriteLine(nome.Length);
@@ -129,14 +129,68 @@ namespace CATI9101
 
             // Alterando variavel para manter so os 4 primeiros caracteres
             //nome = nome.Substring(0, 3));
-            string texto = "socorra-me subi no onibus em marrocos";
-            Console.WriteLine(texto);
-            string textoinv = string.Empty;
-            for (int i = texto.Length - 1; i > -1; i--)
+            //string texto = "socorra-me subi no onibus em marrocos";
+            //Console.WriteLine(texto);
+            //string textoinv = string.Empty;
+            //for (int i = texto.Length - 1; i > -1; i--)
+            //{
+            //    textoinv += texto.Substring(i, 1);
+            //}
+            //Console.WriteLine(textoinv);
+
+            // Manipulação de matrizes
+            Console.WriteLine();
+            int[] numeros = new int[5];
+            Random random = new Random();
+            for (int i = 0; i < numeros.Length; i++)
             {
-                textoinv += texto.Substring(i, 1);
+                int sorteado = random.Next(1, 15);
+
+
+                if (i == 0)
+                {
+                    numeros[i] = sorteado;
+                }
+                else
+                {
+                    if (Array.BinarySearch(numeros, sorteado) < 0)
+                    {
+                        numeros[i] = sorteado;
+                    }
+                    else
+                    {
+                        sorteado = random.Next(1, 15);
+                        if (i == 0)
+                        {
+                            numeros[i] = sorteado;
+                        }
+                    }
+                }
+                if (i != numeros.Length - 1)
+                {
+                    Console.Write(numeros[i] + "-");
+                }
+                else
+                {
+                    Console.WriteLine(numeros[i]);
+                }
+
             }
-            Console.WriteLine(textoinv);
+            Console.WriteLine();
+            Array.Sort(numeros);
+            for (int i = 0; i < numeros.Length; i++)
+            {
+                numeros[i] = random.Next(1, 60);
+                if (i != numeros.Length - 1)
+                {
+                    Console.Write(numeros[i] + "-");
+                }
+                else
+                {
+                    Console.WriteLine(numeros[i]);
+                }
+
+            }
         }
 
         // Tipos de Conversão
